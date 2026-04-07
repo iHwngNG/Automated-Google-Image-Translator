@@ -9,12 +9,14 @@ A standalone utility designed to automate bulk image translations via Google Tra
 
 ## Configuration & Setup
 
-Since this is a portable executable, there is no installation required. However, you need to ensure the app knows where to find Google Chrome.
+Since this is a portable executable, there is no installation required. However, you must absolutely ensure that **Google Chrome** is installed on your computer before proceeding.
 
-1. Place `GoogleImageTranslator.exe` in your workspace.
-2. By default, the app looks for Chrome at `C:\Program Files\Google\Chrome\Application\chrome.exe`. If you installed Chrome in a custom directory:
-   - Make a copy of the provided `.env.example` file and rename it to `.env` (ensure it is in the same folder as the executable).
-   - Open `.env` using any text editor and replace the `CHROME_PATH` value with the actual path to your `chrome.exe`.
+1. **Verify Chrome Path**: By default, the application will attempt to launch Chrome from the standard directory: `C:\Program Files\Google\Chrome\Application\chrome.exe`. 
+2. **Setup .env**:
+   - Double-click the `setup_env.bat` file. This will automatically generate a `.env` configuration file for you.
+   - (Optional) If you installed Chrome in a custom directory, you must configure the environment path:
+     - Open the newly created `.env` file using Notepad (or any text editor).
+     - Replace the `CHROME_PATH` existing value with the exact path to your `chrome.exe` and save the file.
 
 ## Walkthrough
 
